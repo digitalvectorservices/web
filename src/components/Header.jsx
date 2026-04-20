@@ -7,11 +7,11 @@ export const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full z-50 px-6 lg:px-16 py-6 lg:py-8">
+    <header className="w-full z-50 px-6 lg:px-16 py-3 lg:py-4">
       <div className="flex items-center gap-10">
 
         <div className="flex items-center gap-3">
-          <img src={logo} alt="logo" className="w-36 h-36" />
+          <img src={logo} alt="logo" className="h-14 md:h-18 w-auto object-contain"/>
         </div>
 
         <nav className="hidden lg:flex items-center gap-10 text-lg text-gray-300 uppercase">
