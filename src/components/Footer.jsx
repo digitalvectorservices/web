@@ -1,8 +1,8 @@
 import React from 'react';
 import { MapPin, ArrowUp } from 'lucide-react';
+import { navItems } from '../utils/lib';
 
 export const Footer = () => {
-  const navLinks = ['Home', 'Services', 'About', 'News', 'Contact'];
   const legalLinks = ['Privacy Policy', 'Terms & Conditions'];
 
   const scrollToTop = () => {
@@ -21,15 +21,15 @@ export const Footer = () => {
           
           {/* Columna 1: Navegación Principal */}
           <nav className="flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-2 order-1">
-            {navLinks.map((link) => (
+            {navItems.map((item) => (
               <a
-                key={link}
-                href="#"
-                className={`text-sm font-medium transition-colors hover:text-primary ${
-                  link === 'Home' ? 'text-primary' : 'text-white'
+                key={item.label}
+                href={item.path}
+                className={`text-sm font-medium capitalize transition-colors hover:text-primary ${
+                  item.label === 'home' ? 'text-primary' : 'text-white'
                 }`}
               >
-                {link}
+                {item.label}
               </a>
             ))}
           </nav>
@@ -62,12 +62,12 @@ export const Footer = () => {
         {/* Fila Inferior: Copyright y Botón */}
         <div className="flex flex-col items-center justify-center relative">
           <p className="text-xs md:text-sm text-gray-500 text-center">
-            Copyright © 2026 - WordPress Theme by CreativeThemes
+            Copyright © 2026 - Digital Vector Services
           </p>
 
           <button
             onClick={scrollToTop}
-            className="fixed bottom-6 right-6 lg:absolute lg:bottom-0 lg:right-0 bg-primary p-3 rounded-lg text-black hover:brightness-110 transition-all shadow-2xl active:scale-95 z-50"
+            className="hidden lg:block fixed bottom-6 right-6 lg:absolute lg:bottom-0 lg:right-0 bg-primary p-3 rounded-lg text-black hover:brightness-110 transition-all shadow-2xl active:scale-95 z-50"
             aria-label="Scroll to top"
           >
             <ArrowUp size={20} strokeWidth={3} />
