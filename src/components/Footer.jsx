@@ -1,6 +1,9 @@
 import React from 'react';
 import { MapPin, ArrowUp } from 'lucide-react';
 import { navItems } from '../utils/lib';
+import { PrivacyPolicy } from "../pages/PrivacyPolicy";
+import { TermsAndConditions } from "../pages/TermsAndConditions";
+import { legalItems } from '../utils/legalitems';
 
 export const Footer = () => {
   const legalLinks = ['Privacy Policy', 'Terms & Conditions'];
@@ -36,13 +39,13 @@ export const Footer = () => {
 
           {/* Columna 2: Enlaces Legales (Siempre al centro) */}
           <div className="flex justify-center gap-8 order-2">
-            {legalLinks.map((link) => (
+            {legalItems.map((link) => (
               <a
-                key={link}
-                href="#"
+                key={link.label}
+                href={link.path}
                 className="text-sm font-medium text-white hover:text-primary transition-colors whitespace-nowrap"
               >
-                {link}
+                {link.label}
               </a>
             ))}
           </div>

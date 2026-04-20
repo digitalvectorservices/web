@@ -7,6 +7,8 @@ import { WhatsAppButton } from "./components/Whatsapp";
 import { Services } from "./pages/Services";
 import { AboutUs } from "./pages/AboutUs"
 import { Contact } from "./pages/Contact"
+import { PrivacyPolicy } from "./pages/PrivacyPolicy";
+import { TermsAndConditions } from "./pages/TermsAndConditions";
 
 export default function App() {
   return (
@@ -18,6 +20,10 @@ export default function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+        <Route path="/TermsAndConditions" element={<TermsAndConditions />} />
       </Routes>
 
       <Footer />
