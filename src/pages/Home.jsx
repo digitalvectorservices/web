@@ -1,8 +1,9 @@
 import React from "react";
 import { Hero } from "../components/Hero";
 import { Stats } from "../components/Stats";
-import { Services } from "../components/Services";
 import { FeaturesSection } from "../components/FeaturesSection";
+import { ServicesGrid } from "../components/ServicesGrid";
+import { SupportSection } from "../components/SupportSection";
 
 export const Home = () => {
   return (
@@ -10,6 +11,8 @@ export const Home = () => {
       <Hero />
       <Stats/>
       <FeaturesSection/>
+      <ServicesGrid/>
+      <SupportSection/>
     </div>
   );
 }
