@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import hero1 from "../assets/images/hero1.jpeg";
+import hero2 from "../assets/images/ourStory.jpeg";
 import avatar1 from "../assets/images/avatar1.png";
 import avatar2 from "../assets/images/avatar2.png";
 import avatar3 from "../assets/images/avatar3.png";
@@ -12,21 +13,15 @@ const slides = [
       "We Create World Advancing Software With Vision and Passion",
     description:
       "We help build the operating system for data-driven companies to find and pull their performance levers.",
-  },
+  }
+  ,
   {
-    image: hero1,
+    image: hero2,
     title:
       "Building Digital Products That Scale With Your Business",
     description:
       "From idea to execution, we deliver high-quality software solutions tailored to your growth.",
-  },
-  {
-    image: hero1,
-    title:
-      "Empowering Innovation Through Modern Technology",
-    description:
-      "We design and develop cutting-edge solutions that help companies stay ahead of the curve.",
-  },
+  }
 ];
 
 export const Hero = () => {
