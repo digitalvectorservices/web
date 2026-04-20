@@ -7,7 +7,7 @@ export const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full z-50 px-6 lg:px-16 py-3 lg:py-4">
+    <header className="w-full z-50 px-6 lg:px-16 py-3 lg:py-6">
       <div className="flex items-center gap-10">
 
         <div className="flex items-center gap-3">
@@ -46,7 +46,7 @@ export const Header = () => {
           <span>NEWS</span>
           <span>CONTACT</span>
 
-          <button className="mt-4 bg-green-500 px-6 py-3 rounded-xl font-semibold">
+          <button className="mt-4 bg-primary px-6 py-3 rounded-xl font-semibold">
             Get in Touch
           </button>
         </div>
