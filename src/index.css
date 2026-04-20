@@ -8,6 +8,15 @@
   --font-sans: "Inter", sans-serif;
 }
 
+@keyframes border-snake {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-border-snake {
+  animation: border-snake 4s linear infinite;
+}
+
 body {
   font-family: var(--font-sans);
 }

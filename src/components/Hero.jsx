@@ -1,6 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
 import hero1 from "../assets/images/hero1.jpeg";
+import avatar1 from "../assets/images/avatar1.png";
+import avatar2 from "../assets/images/avatar2.png";
+import avatar3 from "../assets/images/avatar3.png";
 
 const slides = [
   {
@@ -87,9 +90,9 @@ export const Hero = () => {
           {/* Rating */}
           <div className="mt-8 flex items-center gap-4 justify-center md:justify-start">
             <div className="flex -space-x-3">
-              <img src="/avatar1.jpg" className="w-8 h-8 rounded-full border border-black" />
-              <img src="/avatar2.jpg" className="w-8 h-8 rounded-full border border-black" />
-              <img src="/avatar3.jpg" className="w-8 h-8 rounded-full border border-black" />
+              <img src={avatar1} className="w-8 h-8 rounded-full border border-black" />
+              <img src={avatar2} className="w-8 h-8 rounded-full border border-black" />
+              <img src={avatar3}  className="w-8 h-8 rounded-full border border-black" />
             </div>
 
             <div>
