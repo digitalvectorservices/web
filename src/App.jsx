@@ -5,6 +5,7 @@ import { Footer } from "./components/Footer";
 import { Home } from "./pages/Home";
 import { WhatsAppButton } from "./components/Whatsapp";
 import { Services } from "./pages/Services";
+import { AboutUs } from "./pages/AboutUs"
 import { Contact } from "./pages/Contact"
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
 
