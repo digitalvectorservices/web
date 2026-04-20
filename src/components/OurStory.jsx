@@ -8,9 +8,9 @@ export const OurStory = () => (
         <img src={ourStories} className="w-full h-full object-cover" alt="Team" />
       </div>
       <div>
-        <h2 className="text-4xl font-bold text-white mb-6">Our Story</h2>
-        <p className="text-gray-400 mb-6 leading-relaxed">Codespot was founded with a shared vision to push the boundaries of digital innovation and deliver meaningful technology solutions.</p>
-        <p className="text-gray-400 mb-10 leading-relaxed">Over the years, we've mastered modern frameworks to build secure, scalable, and high-performing applications.</p>
+        <h2 className="text-4xl font-bold text-white mb-6">Nosotros</h2>
+        <p className="text-gray-400 mb-6 leading-relaxed">Digital Vector Services nació en la Ciudad Autónoma de Buenos Aires con la visión compartida de desafiar los límites de la innovación digital y entregar soluciones tecnológicas con propósito.</p>
+        <p className="text-gray-400 mb-10 leading-relaxed">Con el paso de los años, nos hemos especializado en frameworks modernos para construir aplicaciones seguras, escalables y de alto rendimiento que impulsan el crecimiento de nuestros clientes. Utilizando tecnologías como React y Vite, transformamos ideas complejas en realidades digitales eficientes.</p>
         {/* <button className="bg-primary text-black px-8 py-3 rounded-xl font-bold flex items-center gap-2 hover:scale-105 transition-transform">
           Get Started <ArrowRight size={18} />
         </button> */}

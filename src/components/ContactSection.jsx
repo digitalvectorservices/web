@@ -9,9 +9,9 @@ export const ContactSection = () => {
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">Get in Touch With Us</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">Contactanos</h2>
           <p className="text-gray-400 max-w-3xl text-base leading-relaxed">
-            Founded in 2010, Codespot began as a small team of tech enthusiasts with a vision to redefine digital experiences through innovation, collaboration, and reliable development expertise.
+            Fundada en la Ciudad Autónoma de Buenos Aires, Digital Vector Services comenzó como un equipo apasionado por la tecnología con la visión de redefinir las experiencias digitales a través de la innovación, la colaboración y una sólida experiencia en desarrollo. Utilizamos frameworks modernos como React y Vite para transformar tus ideas en soluciones de alto rendimiento, escalables y seguras.
           </p>
         </div>
 
@@ -34,21 +34,21 @@ export const ContactSection = () => {
               {/* Campos de Texto */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="text-white text-[11px] font-bold block mb-2 uppercase tracking-wider">Your name</label>
+                  <label className="text-white text-[11px] font-bold block mb-2 uppercase tracking-wider">Nombre</label>
                   <input 
                     type="text" 
-                    placeholder="John Doe" 
+                    placeholder="Juan Pérez" 
                     className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all placeholder:text-gray-600" 
                   />
                 </div>
                 <div>
                   <label className="text-white text-[11px] font-bold block mb-2 uppercase tracking-wider">
-                    Your email <span className="text-red-500">*</span>
+                    Correo electrónico <span className="text-red-500">*</span>
                   </label>
                   <input 
                     type="email" 
                     required 
-                    placeholder="john@company.com" 
+                    placeholder="juanperez@company.com" 
                     className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all placeholder:text-gray-600" 
                   />
                 </div>
@@ -57,18 +57,18 @@ export const ContactSection = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="text-white text-[11px] font-bold block mb-2 uppercase tracking-wider">
-                    Company name <span className="text-red-500">*</span>
+                    Empresa <span className="text-red-500">*</span>
                   </label>
                   <input 
                     type="text" 
                     required 
-                    placeholder="Company Inc." 
+                    placeholder="Empresa S.A" 
                     className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all placeholder:text-gray-600" 
                   />
                 </div>
                 <div>
                   <label className="text-white text-[11px] font-bold block mb-2 uppercase tracking-wider">
-                    Phone number <span className="text-red-500">*</span>
+                    Teléfono <span className="text-red-500">*</span>
                   </label>
                   <input 
                     type="tel" 
@@ -80,10 +80,10 @@ export const ContactSection = () => {
               </div>
 
               <div>
-                <label className="text-white text-[11px] font-bold block mb-2 uppercase tracking-wider">Project details (optional)</label>
+                <label className="text-white text-[11px] font-bold block mb-2 uppercase tracking-wider">Consulta</label>
                 <textarea 
                   rows="6" 
-                  placeholder="Tell us about your project, goals, and timeline..." 
+                  placeholder="Contanos de tu proyecto, expecativas, etc..." 
                   className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none placeholder:text-gray-600"
                 ></textarea>
               </div>
