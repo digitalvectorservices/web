@@ -10,17 +10,16 @@ const slides = [
   {
     image: hero1,
     title:
-      "We Create World Advancing Software With Vision and Passion",
+      "Creamos Software de Vanguardia con Visión y Pasión",
     description:
-      "We help build the operating system for data-driven companies to find and pull their performance levers.",
-  }
-  ,
+      "Ayudamos a construir el sistema operativo para empresas basadas en datos, permitiéndoles identificar y potenciar sus niveles de rendimiento.",
+  },
   {
     image: hero2,
     title:
-      "Building Digital Products That Scale With Your Business",
+      "Construyendo Productos Digitales que Escalan con tu Negocio",
     description:
-      "From idea to execution, we deliver high-quality software solutions tailored to your growth.",
+      "Desde la idea hasta la ejecución, entregamos soluciones de software de alta calidad adaptadas a tu crecimiento.",
   }
 ];
 
@@ -44,55 +43,55 @@ export const Hero = () => {
   return (
     <section className="relative w-full h-[85vh] md:h-[90vh] overflow-hidden">
 
-      {/* Background */}
+      {/* Fondo */}
       <div
         className="absolute inset-0 bg-cover bg-center transition-all duration-700 scale-105"
         style={{ backgroundImage: `url(${slide.image})` }}
       />
 
-      {/* Overlay */}
+      {/* Capa de superposición (Overlay) */}
       <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent" />
 
-      {/* Content */}
+      {/* Contenido */}
       <div className="relative z-10 max-w-7xl mx-auto h-full flex items-center px-6 md:px-16">
         <div className="max-w-md sm:max-w-lg md:max-w-xl text-white text-center md:text-left flex flex-col items-center md:items-start">
 
-          {/* Title */}
+          {/* Título */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-medium leading-tight tracking-tight">
             {slide.title}
           </h1>
 
-          {/* Description */}
+          {/* Descripción */}
           <p className="mt-6 text-gray-300 text-base sm:text-lg">
             {slide.description}
           </p>
 
-          {/* CTA */}
+          {/* Llamadas a la acción (CTA) */}
           <div className="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
 
-            {/* Primary */}
+            {/* Primario */}
             <button className="bg-[var(--color-primary)] text-white px-5 py-2.5 sm:px-7 sm:py-3 rounded-xl font-medium hover:brightness-110 transition">
-              Get started now →
+              Empezar ahora →
             </button>
 
-            {/* Secondary */}
+            {/* Secundario */}
             <button className="px-5 py-2.5 sm:px-7 sm:py-3 rounded-xl font-medium text-white border border-white/30 hover:bg-white/10 transition">
-              Learn more →
+              Saber más →
             </button>
 
           </div>
 
-          {/* Rating */}
+          {/* Valoración / Social Proof */}
           <div className="mt-8 flex items-center gap-4 justify-center md:justify-start">
             <div className="flex -space-x-3">
-              <img src={avatar1} className="w-8 h-8 rounded-full border border-black" />
-              <img src={avatar2} className="w-8 h-8 rounded-full border border-black" />
-              <img src={avatar3}  className="w-8 h-8 rounded-full border border-black" />
+              <img src={avatar1} className="w-8 h-8 rounded-full border border-black" alt="Avatar 1" />
+              <img src={avatar2} className="w-8 h-8 rounded-full border border-black" alt="Avatar 2" />
+              <img src={avatar3} className="w-8 h-8 rounded-full border border-black" alt="Avatar 3" />
             </div>
 
             <div>
               <p className="text-sm text-gray-300">
-                Trusted by industry experts
+                Avalado por expertos del sector
               </p>
               <p className="text-sm text-white">★★★★★ 4.9</p>
             </div>
@@ -101,7 +100,7 @@ export const Hero = () => {
         </div>
       </div>
 
-      {/* Left Arrow */}
+      {/* Flecha Izquierda */}
       <button
         onClick={prev}
         className="absolute left-2 md:left-8 top-1/2 -translate-y-1/2 z-20 text-white bg-black/40 hover:bg-black/70 p-3 rounded-full"
@@ -109,7 +108,7 @@ export const Hero = () => {
         ‹
       </button>
 
-      {/* Right Arrow */}
+      {/* Flecha Derecha */}
       <button
         onClick={next}
         className="absolute right-2 md:right-8 top-1/2 -translate-y-1/2 z-20 text-white bg-black/40 hover:bg-black/70 p-3 rounded-full"
@@ -117,7 +116,7 @@ export const Hero = () => {
         ›
       </button>
 
-      {/* Dots */}
+      {/* Puntos de navegación (Dots) */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-20">
         {slides.map((_, i) => (
           <button

@@ -36,40 +36,40 @@ export const Stats = () => {
       
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 items-center text-center md:text-left">
 
-        {/* Title */}
+        {/* Título */}
         <div className="sm:col-span-2 md:col-span-1">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium leading-tight tracking-tight">
-            Transforming <br /> Ideas Into Impact
+            Cambiando <br /> Ideas con Impacto
           </h2>
         </div>
 
-        {/* Stat 1 */}
+        {/* Estadística 1 */}
         <div>
           <p className="text-6xl sm:text-7xl md:text-[96px] font-medium tracking-tighter leading-none text-[var(--color-primary)]">
             <Counter end={500} suffix="+" />
           </p>
           <p className="mt-3 text-gray-400 text-sm sm:text-base">
-            Successful projects
+            Proyectos exitosos
           </p>
         </div>
 
-        {/* Stat 2 */}
+        {/* Estadística 2 */}
         <div>
           <p className="text-6xl sm:text-7xl md:text-[96px] font-medium tracking-tighter leading-none text-[var(--color-primary)]">
             <Counter end={60} suffix="%" />
           </p>
           <p className="mt-3 text-gray-400 text-sm sm:text-base">
-            Faster launch time
+            Lanzamientos más rápidos
           </p>
         </div>
 
-        {/* Stat 3 */}
+        {/* Estadística 3 */}
         <div>
           <p className="text-6xl sm:text-7xl md:text-[96px] font-medium tracking-tighter leading-none text-[var(--color-primary)]">
             <Counter end={120} suffix="%" />
           </p>
           <p className="mt-3 text-gray-400 text-sm sm:text-base">
-            Average ROI increase
+            Aumento promedio del ROI
           </p>
         </div>
 

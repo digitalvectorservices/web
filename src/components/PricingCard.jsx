@@ -23,7 +23,8 @@ export const PricingCard = ({ plan, index }) => {
             <h3 className="text-white text-xl font-bold">{plan.name}</h3>
             <p className="text-gray-400 text-[11px] mt-2 leading-relaxed">{plan.description}</p>
           </div>
-          {/* Badge opcional para mantener el diseño original si lo deseas */}
+          
+          {/* Badge para el plan popular */}
           {plan.name === "Business" && (
             <span className="bg-primary/20 text-primary text-[10px] font-bold px-3 py-1 rounded-full border border-primary/30 uppercase tracking-wider shrink-0">
               Popular
@@ -34,16 +35,17 @@ export const PricingCard = ({ plan, index }) => {
         <div className="mb-8">
           <div className="flex items-baseline gap-1">
             <span className="text-4xl font-bold text-white">${plan.price}</span>
-            <span className="text-gray-500 text-sm">/month</span>
+            <span className="text-gray-500 text-sm">/mes</span>
           </div>
-          <p className="text-gray-500 text-[10px] mt-1">Billed annually</p>
+          <p className="text-gray-500 text-[10px] mt-1">Facturado anualmente</p>
         </div>
 
-        {/* Botón con el mismo color primario para todas */}
+        {/* Botón de acción */}
         <button className="w-full py-4 rounded-xl font-bold text-sm flex items-center justify-center gap-2 bg-primary text-black transition-all hover:brightness-110 active:scale-95 mb-8 shadow-[0_0_20px_rgba(theme(colors.primary),0.2)]">
-          Get started now <ArrowRight size={16} strokeWidth={3} />
+          Empezar ahora <ArrowRight size={16} strokeWidth={3} />
         </button>
 
+        {/* Lista de características */}
         <ul className="space-y-4 flex-grow">
           {plan.features.map((feature, idx) => (
             <li key={idx} className="flex items-center gap-3 text-gray-300 text-[12px]">

@@ -4,23 +4,23 @@ import { Feature } from './Feature';
 
 const features = [
   {
-    title: "Powerful API's",
-    description: "Build smarter systems using robust, well-documented APIs that simplify integrations and accelerate development processes.",
+    title: "APIs Potentes",
+    description: "Construye sistemas más inteligentes utilizando APIs robustas y bien documentadas que simplifican las integraciones y aceleran los procesos de desarrollo.",
     icon: <Cpu size={20} />,
   },
   {
-    title: "Secure & isolated",
-    description: "Maintain complete control with isolated infrastructure designed to safeguard sensitive information and prevent cross-environment risks.",
+    title: "Seguro y Aislado",
+    description: "Mantén el control total con una infraestructura aislada diseñada para proteger la información sensible y prevenir riesgos entre entornos.",
     icon: <ShieldCheck size={20} />,
   },
   {
-    title: "Ready for scale",
-    description: "Scale your applications seamlessly with architecture optimized for speed, reliability, and evolving business requirements.",
+    title: "Listo para Escalar",
+    description: "Escala tus aplicaciones sin problemas con una arquitectura optimizada para la velocidad, la confiabilidad y los requisitos comerciales en constante evolución.",
     icon: <Maximize size={20} />,
   },
   {
-    title: "Ongoing context",
-    description: "Maintain seamless continuity with real-time context that persists across sessions, workflows, and collaborative environments.",
+    title: "Contexto Continuo",
+    description: "Mantén una continuidad fluida con contexto en tiempo real que persiste a través de sesiones, flujos de trabajo y entornos colaborativos.",
     icon: <MessageSquare size={20} />,
   },
 ];

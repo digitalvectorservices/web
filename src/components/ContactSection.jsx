@@ -73,7 +73,7 @@ export const ContactSection = () => {
                   <input 
                     type="tel" 
                     required 
-                    placeholder="+1 (555) 000-0000" 
+                    placeholder="+54 (11) 000-0000" 
                     className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all placeholder:text-gray-600" 
                   />
                 </div>

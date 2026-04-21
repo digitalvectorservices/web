@@ -4,22 +4,54 @@ import { PricingCard } from './PricingCard';
 export const PricingSection = () => {
   const plans = [
     {
-      name: "Basic",
+      name: "Básico",
       price: "299",
-      description: "Essential development tools and support to launch projects.",
-      features: ["Single Project Setup", "Core Code Audit", "API Integration", "Responsive Design", "Basic Optimization", "Version Control", "SEO Structure", "Form Integration", "Email Support"]
+      description: "Herramientas esenciales de desarrollo y soporte para lanzar proyectos.",
+      features: [
+        "Configuración de Proyecto Único",
+        "Auditoría de Código Base",
+        "Integración de APIs",
+        "Diseño Responsivo",
+        "Optimización Básica",
+        "Control de Versiones",
+        "Estructura SEO",
+        "Integración de Formularios",
+        "Soporte por Email"
+      ]
     },
     {
       name: "Business",
       price: "699",
-      description: "Advanced features and integrations for scaling multiple projects.",
-      features: ["Up to 3 Projects", "Advanced Code Review", "Performance Insights", "Automation Workflows", "Security Enhancements", "CI/CD Pipeline", "API Monitoring", "Custom Analytics", "Performance Reports", "Chat Support", "Monthly Consultation"]
+      description: "Funciones avanzadas e integraciones para escalar múltiples proyectos.",
+      features: [
+        "Hasta 3 Proyectos",
+        "Revisión de Código Avanzada",
+        "Análisis de Rendimiento",
+        "Flujos de Automatización",
+        "Mejoras de Seguridad",
+        "Pipeline de CI/CD",
+        "Monitoreo de APIs",
+        "Analítica Personalizada",
+        "Reportes de Performance",
+        "Soporte por Chat",
+        "Consultoría Mensual"
+      ]
     },
     {
       name: "Enterprise",
       price: "1.999",
-      description: "Comprehensive solutions crafted for large, performance systems.",
-      features: ["Unlimited Projects", "Full Optimization", "Architecture Planning", "Cloud Deployment", "API Development", "Security Compliance", "Custom Dashboards", "Priority Support", "Dedicated QA"]
+      description: "Soluciones integrales diseñadas para sistemas de gran escala y alto rendimiento.",
+      features: [
+        "Proyectos Ilimitados",
+        "Optimización Completa",
+        "Planificación de Arquitectura",
+        "Despliegue en la Nube",
+        "Desarrollo de APIs",
+        "Cumplimiento de Seguridad",
+        "Paneles Personalizados",
+        "Soporte Prioritario",
+        "QA Dedicado"
+      ]
     }
   ];
 
@@ -27,9 +59,9 @@ export const PricingSection = () => {
     <section className="bg-black py-24 px-6 relative overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Pick Your Plan</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Elige tu Plan</h2>
           <p className="text-gray-400 text-sm max-w-2xl mx-auto leading-relaxed">
-            Choose the plan that best fits your business needs.
+            Selecciona el plan que mejor se adapte a las necesidades de tu negocio.
           </p>
         </div>
 
