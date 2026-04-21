@@ -4,6 +4,7 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { Home } from "./pages/Home";
 import { WhatsAppButton } from "./components/Whatsapp";
+import { Upbutton } from "./components/Upbutton";
 import { Services } from "./pages/Services";
 import { AboutUs } from "./pages/AboutUs"
 import { Contact } from "./pages/Contact"
@@ -28,6 +29,7 @@ export default function App() {
 
       <Footer />
       <WhatsAppButton />
+      <Upbutton/>
     </div>
   );
 }

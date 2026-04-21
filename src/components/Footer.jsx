@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, ArrowUp } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 import { navItems } from '../utils/lib';
 import { PrivacyPolicy } from "../pages/PrivacyPolicy";
 import { TermsAndConditions } from "../pages/TermsAndConditions";
@@ -7,10 +7,6 @@ import { legalItems } from '../utils/legalitems';
 
 export const Footer = () => {
   const legalLinks = ['Privacy Policy', 'Terms & Conditions'];
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
 
   return (
     <footer className="bg-black text-white pt-16 pb-10 px-6 relative overflow-hidden">
@@ -67,14 +63,6 @@ export const Footer = () => {
           <p className="text-xs md:text-sm text-gray-500 text-center">
             Copyright © 2026 - Digital Vector Services
           </p>
-
-          <button
-            onClick={scrollToTop}
-            className="hidden lg:block fixed bottom-6 right-6 lg:absolute lg:bottom-0 lg:right-0 bg-primary p-3 rounded-lg text-black hover:brightness-110 transition-all shadow-2xl active:scale-95 z-50"
-            aria-label="Scroll to top"
-          >
-            <ArrowUp size={20} strokeWidth={3} />
-          </button>
         </div>
       </div>
     </footer>
