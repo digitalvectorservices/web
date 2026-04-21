@@ -34,8 +34,9 @@ export const ContactSection = () => {
               {/* Campos de Texto */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="text-white text-[11px] font-bold block mb-2 uppercase tracking-wider">Nombre</label>
+                  <label className="text-white text-[11px] font-bold block mb-2 uppercase tracking-wider">Nombre<span className="text-white-500">*</span></label>
                   <input 
+                    required
                     type="text" 
                     placeholder="Juan Pérez" 
                     className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all placeholder:text-gray-600" 
@@ -43,7 +44,7 @@ export const ContactSection = () => {
                 </div>
                 <div>
                   <label className="text-white text-[11px] font-bold block mb-2 uppercase tracking-wider">
-                    Correo electrónico <span className="text-red-500">*</span>
+                    Correo electrónico <span className="text-white-500">*</span>
                   </label>
                   <input 
                     type="email" 
@@ -57,7 +58,7 @@ export const ContactSection = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="text-white text-[11px] font-bold block mb-2 uppercase tracking-wider">
-                    Empresa <span className="text-red-500">*</span>
+                    Empresa <span className="text-white-500">*</span>
                   </label>
                   <input 
                     type="text" 
@@ -68,12 +69,12 @@ export const ContactSection = () => {
                 </div>
                 <div>
                   <label className="text-white text-[11px] font-bold block mb-2 uppercase tracking-wider">
-                    Teléfono <span className="text-red-500">*</span>
+                    Teléfono <span className="text-white-500">*</span>
                   </label>
                   <input 
                     type="tel" 
                     required 
-                    placeholder="+54 (11) 000-0000" 
+                    placeholder="+54 (11) 0000-0000" 
                     className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all placeholder:text-gray-600" 
                   />
                 </div>
