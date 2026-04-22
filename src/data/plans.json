@@ -1,0 +1,304 @@
+{
+  "sectores": [
+    {
+      "sector": "Construcción & Diseño",
+      "planes": [
+        {
+          "name": "Esencial",
+          "description": "Landing Page con galería fija de alta calidad + definición de paleta de colores y tipografía web",
+          "price": 20,
+          "features": [
+            "Landing Page",
+            "Galería de alta calidad",
+            "Paleta de colores",
+            "Tipografía web"
+          ]
+        },
+        {
+          "name": "Presencia",
+          "description": "SPA con secciones + optimización estética de Instagram",
+          "price": 20,
+          "features": [
+            "SPA",
+            "Sección Sobre mí",
+            "Sección Proyectos",
+            "Optimización feed Instagram",
+            "Portadas historias destacadas"
+          ]
+        },
+        {
+          "name": "Autoridad",
+          "description": "SEO local + contenido estratégico",
+          "price": 20,
+          "features": [
+            "SEO local",
+            "4 posts",
+            "Obra terminada",
+            "Filosofía de diseño"
+          ]
+        },
+        {
+          "name": "Gestión",
+          "description": "Panel de cliente + contenido avanzado",
+          "price": 20,
+          "features": [
+            "Panel de cliente",
+            "Seguimiento de planos/avances",
+            "8 posts",
+            "Reels de procesos",
+            "Elección de materiales"
+          ]
+        }
+      ]
+    },
+    {
+      "sector": "Salud & Bienestar",
+      "planes": [
+        {
+          "name": "Esencial",
+          "description": "Landing con CV + contacto directo",
+          "price": 20,
+          "features": [
+            "Landing Page",
+            "CV profesional",
+            "Especialidades",
+            "Botón WhatsApp",
+            "Logo minimalista",
+            "Diseño limpio"
+          ]
+        },
+        {
+          "name": "Presencia",
+          "description": "Web informativa + base de contenido",
+          "price": 20,
+          "features": [
+            "Sección Tratamientos",
+            "Blog de salud",
+            "Bio profesional Instagram",
+            "Plantillas médicas"
+          ]
+        },
+        {
+          "name": "Crecimiento",
+          "description": "SEO por intención + contenido educativo",
+          "price": 20,
+          "features": [
+            "SEO por síntomas",
+            "SEO por patologías",
+            "4 posts educativos",
+            "Contenido anti-mitos"
+          ]
+        },
+        {
+          "name": "Eficiencia",
+          "description": "Automatización de turnos + contenido dinámico",
+          "price": 20,
+          "features": [
+            "Sistema de turnos online",
+            "Recordatorios",
+            "8 posts",
+            "Reels Q&A",
+            "Contenido consultorio"
+          ]
+        }
+      ]
+    },
+    {
+      "sector": "Estética & Moda",
+      "planes": [
+        {
+          "name": "Esencial",
+          "description": "Landing tipo Linktree + identidad visual trendy",
+          "price": 20,
+          "features": [
+            "Landing tipo Linktree",
+            "Listado de servicios",
+            "Diseño trendy",
+            "Colores tendencia",
+            "Sombras suaves"
+          ]
+        },
+        {
+          "name": "Presencia",
+          "description": "Web visual + contenido editorial",
+          "price": 20,
+          "features": [
+            "Web interactiva",
+            "Galería antes/después",
+            "4 posts estilo editorial"
+          ]
+        },
+        {
+          "name": "Influencia",
+          "description": "SEO + dirección estética constante",
+          "price": 20,
+          "features": [
+            "SEO servicios específicos",
+            "Guía de estilo",
+            "Asesoría visual"
+          ]
+        },
+        {
+          "name": "Venta",
+          "description": "Monetización + contenido de tendencia",
+          "price": 20,
+          "features": [
+            "Ecommerce",
+            "Venta de productos",
+            "Venta de guías PDF",
+            "8 posts",
+            "Reels tendencias",
+            "Transiciones"
+          ]
+        }
+      ]
+    },
+    {
+      "sector": "Gastronomía",
+      "planes": [
+        {
+          "name": "Esencial",
+          "description": "Menú digital + enfoque visual",
+          "price": 20,
+          "features": [
+            "Landing Page",
+            "Menú digital",
+            "Fotografía optimizada"
+          ]
+        },
+        {
+          "name": "Presencia",
+          "description": "Pedidos online + contenido base",
+          "price": 20,
+          "features": [
+            "Formulario de pedidos",
+            "Bio optimizada delivery",
+            "4 fotos producto estrella"
+          ]
+        },
+        {
+          "name": "Flujo",
+          "description": "SEO local + contenido impulsivo",
+          "price": 20,
+          "features": [
+            "SEO local",
+            "4 posts",
+            "Antojo del día"
+          ]
+        },
+        {
+          "name": "Automatización",
+          "description": "Ecommerce + contenido detrás de escena",
+          "price": 20,
+          "features": [
+            "Tienda online",
+            "Carrito de compras",
+            "Pagos integrados",
+            "8 posts",
+            "Reels cocina",
+            "Promociones"
+          ]
+        }
+      ]
+    },
+    {
+      "sector": "Creativo",
+      "planes": [
+        {
+          "name": "Esencial",
+          "description": "Portfolio + identidad artística",
+          "price": 20,
+          "features": [
+            "Portfolio landing",
+            "Biografía artística",
+            "Marca personal"
+          ]
+        },
+        {
+          "name": "Presencia",
+          "description": "Organización de obra + contenido visual",
+          "price": 20,
+          "features": [
+            "Secciones por categorías",
+            "4 posts carrusel",
+            "Detalles de obra"
+          ]
+        },
+        {
+          "name": "Alcance",
+          "description": "SEO + estrategia de contenido",
+          "price": 20,
+          "features": [
+            "SEO name artístico",
+            "SEO estilo",
+            "Hashtags",
+            "4 posts inspiración"
+          ]
+        },
+        {
+          "name": "Monetización",
+          "description": "Venta + contenido en proceso",
+          "price": 20,
+          "features": [
+            "Venta de productos digitales",
+            "Prints",
+            "Presets",
+            "Música",
+            "8 posts",
+            "Work in progress",
+            "Colaboraciones"
+          ]
+        }
+      ]
+    },
+    {
+      "sector": "Holístico",
+      "planes": [
+        {
+          "name": "Esencial",
+          "description": "Landing + identidad espiritual",
+          "price": 20,
+          "features": [
+            "Landing Page",
+            "Descripción de servicios",
+            "Ética de trabajo",
+            "Diseño esotérico"
+          ]
+        },
+        {
+          "name": "Presencia",
+          "description": "Validación social + contenido base",
+          "price": 20,
+          "features": [
+            "Tipos de lectura",
+            "Testimonios",
+            "Bio con intención",
+            "4 posts energéticos"
+          ]
+        },
+        {
+          "name": "Comunidad",
+          "description": "SEO + contenido recurrente",
+          "price": 20,
+          "features": [
+            "SEO espiritual",
+            "4 posts",
+            "Horóscopo",
+            "Energía del mes"
+          ]
+        },
+        {
+          "name": "Expansión",
+          "description": "Monetización + contenido diario",
+          "price": 20,
+          "features": [
+            "Reserva con pago",
+            "8 posts",
+            "Reels lecturas rápidas",
+            "Mensajes del día"
+          ]
+        }
+      ]
+    }
+  ]
+}
