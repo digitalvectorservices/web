@@ -32,7 +32,7 @@ export const Header = () => {
           ))}
         </nav>
 
-        <div className="ml-auto flex items-center gap-4">
+        {/* <div className="ml-auto flex items-center gap-4">
 
           <button className="hidden lg:block bg-primary hover:bg-primary/80 px-7 py-3 rounded-xl font-semibold text-white cursor-pointer">
             Solicitar propuesta
@@ -44,7 +44,7 @@ export const Header = () => {
           >
             {open ? <X size={28} /> : <Menu size={28} />}
           </button>
-        </div>
+        </div> */}
       </div>
 
       {open && (

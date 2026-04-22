@@ -1,12 +1,14 @@
 import React from 'react';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
 import Support from "../assets/images/support.jpg";
+import { useNavigate } from 'react-router-dom';
 
 export const SupportSection = () => {
+  const navigate = useNavigate();
   const points = [
-    "Orientación experta para el despliegue e integración de código",
-    "Soporte rápido y confiable para desafíos técnicos",
-    "Mejora continua a través del feedback y la colaboración"
+    "Gestión integral y actualizaciones periódicas de tu plataforma",
+    "Respuesta rápida ante cualquier necesidad o cambio en tu estrategia",
+    "Optimización constante basada en resultados y nuevas tendencias"
   ];
 
   return (
@@ -30,11 +32,11 @@ export const SupportSection = () => {
               <div className="p-10 lg:p-16 space-y-8">
                 <div className="space-y-4">
                   <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
-                    Soporte Dedicado Disponible <br /> en Todos los Idiomas
+                    Acompañamiento Estratégico <br /> para tu Crecimiento
                   </h2>
                   <p className="text-gray-400 text-sm md:text-base leading-relaxed max-w-md">
-                    Expertos dedicados disponibles 24/7 para una comunicación clara, 
-                    asistencia rápida y experiencias excepcionales en todo el mundo.
+                    Mantenemos tu plataforma web y redes sociales siempre activas y actualizadas. 
+                    Un equipo dedicado a la evolución de tu marca para que tu única preocupación sea atender a tus nuevos clientes.
                   </p>
                 </div>
 
@@ -49,8 +51,13 @@ export const SupportSection = () => {
                 </ul>
 
                 {/* Botón */}
-                <button className="bg-primary hover:brightness-110 text-black font-bold py-4 px-8 rounded-full flex items-center gap-2 transition-all active:scale-95 shadow-[0_10px_20px_-10px_rgba(theme(colors.primary),0.5)]">
-                  Empezar Ahora <ArrowRight size={18} strokeWidth={3} />
+                <button className="cursor-pointer bg-primary hover:brightness-110 text-black font-bold py-4 px-8 rounded-full flex items-center gap-2 transition-all active:scale-95 shadow-[0_10px_20px_-10px_rgba(theme(colors.primary),0.5)]"
+                onClick={() => {
+                  navigate('/services'); 
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+                >
+                  Ver planes incluidos <ArrowRight size={18} strokeWidth={3} />
                 </button>
               </div>
 

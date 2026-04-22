@@ -60,6 +60,7 @@ export const PricingSection = () => {
               key={index}
               plan={plan}
               sectionPlans={currentSector.planes}
+              sector={currentSector.sector}
             />
           ))}
         </div>

@@ -58,11 +58,10 @@ export const ContactSection = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="text-white text-[11px] font-bold block mb-2 uppercase tracking-wider">
-                    Empresa <span className="text-white-500">*</span>
+                    Empresa <span className="text-white-500">(opcional)</span>
                   </label>
                   <input 
                     type="text" 
-                    required 
                     placeholder="Empresa S.A" 
                     className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all placeholder:text-gray-600" 
                   />
@@ -81,9 +80,10 @@ export const ContactSection = () => {
               </div>
 
               <div>
-                <label className="text-white text-[11px] font-bold block mb-2 uppercase tracking-wider">Consulta</label>
+                <label className="text-white text-[11px] font-bold block mb-2 uppercase tracking-wider">Consulta <span className="text-white-500">*</span></label>
                 <textarea 
                   rows="6" 
+                  required
                   placeholder="Contanos de tu proyecto, expecativas, etc..." 
                   className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none placeholder:text-gray-600"
                 ></textarea>
@@ -91,9 +91,9 @@ export const ContactSection = () => {
 
               <button 
                 type="submit" 
-                className="w-full bg-primary text-black px-10 py-4 rounded-xl font-bold text-sm hover:brightness-110 hover:scale-[1.02] active:scale-95 transition-all shadow-[0_10px_30px_-10px_rgba(theme(colors.primary),0.4)]"
+                className="cursor-pointer w-full bg-primary text-black px-10 py-4 rounded-xl font-bold text-sm hover:brightness-110 hover:scale-[1.02] active:scale-95 transition-all shadow-[0_10px_30px_-10px_rgba(theme(colors.primary),0.4)]"
               >
-                Submit Form
+                Enviar
               </button>
             </form>
           </div>

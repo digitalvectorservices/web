@@ -1,24 +1,24 @@
 import React from 'react';
-import { Smartphone, Laptop, CreditCard, ArrowRight } from 'lucide-react';
+import { Smartphone, Laptop, CreditCard, ArrowRight, Layout, TrendingUp, ShoppingCart } from 'lucide-react';
 import Feature from "../assets/images/feature.jpg";
 import { AnimatedCard, SmallFeature } from './SmallFeature';
 
 export const FeaturesSection = () => {
   const smallFeatures = [
     {
-      icon: Smartphone,
-      title: "Aplicaciones Móviles",
-      description: "Apps móviles innovadoras cuidadosamente adaptadas a sus necesidades específicas."
+      icon: Layout, 
+      title: "Interfaces de Alto Rendimiento",
+      description: "Desarrollo de sitios web rápidos y adaptables, optimizados para ofrecer una experiencia de usuario fluida en cualquier dispositivo."
     },
     {
-      icon: Laptop,
-      title: "Integración con Dispositivos",
-      description: "Integración perfecta de dispositivos diseñada para simplificar su experiencia."
+      icon: TrendingUp,
+      title: "Posicionamiento y Estrategia",
+      description: "Implementación de técnicas SEO y gestión de identidad digital para elevar la visibilidad de tu marca y atraer tráfico de calidad."
     },
     {
-      icon: CreditCard,
-      title: "Sistemas de Facturación",
-      description: "Sistemas de facturación inteligentes creados para simplificar la gestión financiera."
+      icon: ShoppingCart,
+      title: "Ecosistemas de Conversión",
+      description: "Configuración de plataformas de venta y sistemas de reserva integrados que automatizan la captación y gestión de tus clientes."
     }
   ];
 
@@ -31,7 +31,7 @@ export const FeaturesSection = () => {
           <div className="lg:col-span-7 flex flex-col justify-start gap-8">
             <div className="max-w-2xl">
               <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight leading-tight">
-                Descubre Todas las Potentes <br /> Funciones de Codespot
+                Descubre Todas las Potentes <br /> Funciones de Digital Vector
               </h2>
               <p className="text-gray-400 text-lg leading-relaxed">
                 Desbloquea funciones potentes diseñadas para optimizar flujos de trabajo, 
@@ -69,14 +69,11 @@ export const FeaturesSection = () => {
                 {/* Contenido de Texto */}
                 <div className="space-y-4">
                   <h3 className="text-2xl font-bold max-w-[280px] mx-auto leading-snug">
-                    Donde la Privacidad se Une con la Excelencia en Rendimiento
+                    Donde la Estrategia Visual se Une con el Crecimiento Real
                   </h3>
                   <p className="text-gray-400 text-sm max-w-[280px] mx-auto">
-                    Diseñado para proporcionar privacidad, confiabilidad y seguridad para las empresas modernas en cualquier lugar.
+                    Diseñamos soluciones digitales que combinan estética profesional y rendimiento para impulsar la autoridad de tu marca en el mercado.
                   </p>
-                  <button className="bg-primary hover:brightness-110 text-black font-black py-3 px-8 rounded-full flex items-center gap-3 mx-auto transition-all active:scale-95 shadow-[0_10px_20px_-10px_rgba(theme(colors.primary),0.5)] text-sm uppercase">
-                    EMPEZAR AHORA <ArrowRight size={18} strokeWidth={3} />
-                  </button>
                 </div>
               </div>
             </AnimatedCard>

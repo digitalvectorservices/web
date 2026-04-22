@@ -6,19 +6,19 @@ import { Code2, Zap, Layers } from 'lucide-react';
 
 const FSection = [
   {
-    icon: Code2, // Representa desarrollo de software sólido
-    title: "Arquitectura Escalable",
-    description: "Diseñamos sistemas robustos utilizando React y Vite para garantizar un rendimiento óptimo bajo cualquier carga."
+    icon: Code2,
+    title: "Ingeniería de Vanguardia",
+    description: "Desarrollamos con el stack más moderno (React + Vite) para crear soluciones que no solo funcionan, sino que definen el estándar de tu industria."
   },
   {
-    icon: Layers, // Representa la integración y capas de servicios
-    title: "Soluciones Full-Stack",
-    description: "Integramos interfaces dinámicas con arquitecturas de backend eficientes, priorizando la seguridad y la velocidad."
+    icon: Layers,
+    title: "Ecosistemas Integrados",
+    description: "Conectamos interfaces dinámicas con arquitecturas sólidas, asegurando que cada capa de tu negocio digital trabaje en total sincronía y seguridad."
   },
   {
-    icon: Zap, // Representa optimización y rapidez (Digital Vector)
-    title: "Optimización de Rendimiento",
-    description: "Refinamos cada línea de código para lograr tiempos de carga mínimos y una experiencia de usuario fluida."
+    icon: Zap,
+    title: "Velocidad de Ejecución",
+    description: "Maximizamos el rendimiento técnico para acelerar tu llegada al mercado, convirtiendo la velocidad de carga en una ventaja competitiva real."
   }
 ];
 

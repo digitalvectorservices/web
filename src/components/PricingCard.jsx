@@ -1,6 +1,7 @@
 import { CheckCircle2, XCircle, ArrowRight } from 'lucide-react';
+import { goToWhatsapp } from '../utils/whatsapp';
 
-export const PricingCard = ({ plan, sectionPlans }) => {
+export const PricingCard = ({ plan, sectionPlans, sector }) => {
   // 🔥 Encontrar índice REAL del plan
   const currentIndex = sectionPlans.findIndex(
     (p) => p.name === plan.name
@@ -50,8 +51,9 @@ export const PricingCard = ({ plan, sectionPlans }) => {
           {!plan.mensual && <p className="text-gray-500 text-sm mt-1 mb-4">Pago único</p>}
         </div>
 
-        <button className="cursor-pointer w-full py-4 rounded-xl font-bold text-sm flex items-center justify-center gap-2 bg-primary text-black transition-all hover:brightness-110 active:scale-95 mb-8">
-          Empezar ahora <ArrowRight size={16} strokeWidth={3} />
+        <button className="cursor-pointer w-full py-4 rounded-xl font-bold text-sm flex items-center justify-center gap-2 bg-primary text-black transition-all hover:brightness-110 active:scale-95 mb-8"
+          onClick={() => goToWhatsapp(sector, plan.name)}>
+          Saber más <ArrowRight size={16} strokeWidth={3} />
         </button>
 
         {/* FEATURES */}
