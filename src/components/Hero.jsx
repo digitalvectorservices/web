@@ -9,17 +9,15 @@ import avatar3 from "../assets/images/avatar3.png";
 const slides = [
   {
     image: hero1,
-    title:
-      "Creamos Software de Vanguardia con Visión y Pasión",
+    title: "Tu Marca en el Centro de la Escena",
     description:
-      "Ayudamos a construir el sistema operativo para empresas basadas en datos, permitiéndoles identificar y potenciar sus niveles de rendimiento.",
+      "Diseñamos tu identidad visual y gestionamos tus redes sociales con estrategia profesional. Creamos una imagen sólida y coherente que atrae clientes y posiciona tu nombre en el mercado.",
   },
   {
     image: hero2,
-    title:
-      "Construyendo Productos Digitales que Escalan con tu Negocio",
+    title: "Tu Próximo Local es Digital",
     description:
-      "Desde la idea hasta la ejecución, entregamos soluciones de software de alta calidad adaptadas a tu crecimiento.",
+      "Desarrollamos sitios web y tiendas online diseñadas para convertir visitas en ventas. Creamos una plataforma rápida, moderna y profesional que trabaja por tu negocio las 24 horas.",
   }
 ];
 
@@ -30,7 +28,7 @@ export const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 9000);
     return () => clearInterval(interval);
   }, []);
 
@@ -70,12 +68,12 @@ export const Hero = () => {
           <div className="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
 
             {/* Primario */}
-            <button className="bg-[var(--color-primary)] text-white px-5 py-2.5 sm:px-7 sm:py-3 rounded-xl font-medium hover:brightness-110 transition">
+            <button className="cursor-pointer bg-[var(--color-primary)] text-white px-5 py-2.5 sm:px-7 sm:py-3 rounded-xl font-medium hover:brightness-110 transition">
               Empezar ahora →
             </button>
 
             {/* Secundario */}
-            <button className="px-5 py-2.5 sm:px-7 sm:py-3 rounded-xl font-medium text-white border border-white/30 hover:bg-white/10 transition">
+            <button className="cursor-pointer px-5 py-2.5 sm:px-7 sm:py-3 rounded-xl font-medium text-white border border-white/30 hover:bg-white/10 transition">
               Saber más →
             </button>
 
@@ -91,7 +89,7 @@ export const Hero = () => {
 
             <div>
               <p className="text-sm text-gray-300">
-                Avalado por expertos del sector
+                Nuestros clientes, nuestra mejor referencia
               </p>
               <p className="text-sm text-white">★★★★★ 4.9</p>
             </div>

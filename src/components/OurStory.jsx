@@ -9,11 +9,8 @@ export const OurStory = () => (
       </div>
       <div>
         <h2 className="text-4xl font-bold text-white mb-6">Nosotros</h2>
-        <p className="text-gray-400 mb-6 leading-relaxed">Digital Vector Services nació en la Ciudad Autónoma de Buenos Aires con la visión compartida de desafiar los límites de la innovación digital y entregar soluciones tecnológicas con propósito.</p>
-        <p className="text-gray-400 mb-10 leading-relaxed">Con el paso de los años, nos hemos especializado en frameworks modernos para construir aplicaciones seguras, escalables y de alto rendimiento que impulsan el crecimiento de nuestros clientes. Utilizando tecnologías como React y Vite, transformamos ideas complejas en realidades digitales eficientes.</p>
-        {/* <button className="bg-primary text-black px-8 py-3 rounded-xl font-bold flex items-center gap-2 hover:scale-105 transition-transform">
-          Get Started <ArrowRight size={18} />
-        </button> */}
+        <p className="text-gray-400 mb-6 leading-relaxed">Digital Vector Services nació en Buenos Aires con una misión clara: transformar el potencial de las empresas en realidades digitales de alto impacto. No solo creamos sitios web; diseñamos herramientas estratégicas que impulsan el crecimiento y la presencia de nuestros clientes en un mercado cada vez más exigente.</p>
+        <p className="text-gray-400 mb-10 leading-relaxed">A lo largo de los años, nos hemos consolidado como socios expertos en la creación de plataformas seguras, ágiles y preparadas para escalar. Nos apasiona resolver la complejidad técnica para entregar experiencias simples, elegantes y eficientes que conectan a las marcas con su audiencia ideal. Nuestro compromiso es acompañar tu evolución con soluciones robustas que conviertan tus metas en resultados tangibles.</p>
       </div>
     </div>
   </section>

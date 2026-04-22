@@ -46,7 +46,7 @@ export const Stats = () => {
         {/* Estadística 1 */}
         <div>
           <p className="text-6xl sm:text-7xl md:text-[96px] font-medium tracking-tighter leading-none text-[var(--color-primary)]">
-            <Counter end={500} suffix="+" />
+            <Counter end={17} suffix="+" />
           </p>
           <p className="mt-3 text-gray-400 text-sm sm:text-base">
             Proyectos exitosos

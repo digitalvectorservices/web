@@ -1,27 +1,27 @@
 import React from 'react';
-import { Cpu, ShieldCheck, Maximize, MessageSquare, ArrowRight } from 'lucide-react';
+import { Cpu, ShieldCheck, Maximize, MessageSquare, ArrowRight, Palette, Zap, Share2, Trophy } from 'lucide-react';
 import { Feature } from './Feature';
 
 const features = [
   {
-    title: "APIs Potentes",
-    description: "Construye sistemas más inteligentes utilizando APIs robustas y bien documentadas que simplifican las integraciones y aceleran los procesos de desarrollo.",
-    icon: <Cpu size={20} />,
+    title: "Diseño con Intención",
+    description: "Interfaces limpias y minimalistas que priorizan la estética profesional, eliminando ruidos visuales para que tu trabajo sea el protagonista absoluto.",
+    icon: <Palette size={20} />,
   },
   {
-    title: "Seguro y Aislado",
-    description: "Mantén el control total con una infraestructura aislada diseñada para proteger la información sensible y prevenir riesgos entre entornos.",
-    icon: <ShieldCheck size={20} />,
+    title: "Conversión Directa",
+    description: "Estrategias de contacto integradas, desde botones de WhatsApp estratégicos hasta sistemas de reservas, diseñados para transformar visitantes en clientes.",
+    icon: <Zap size={20} />,
   },
   {
-    title: "Listo para Escalar",
-    description: "Escala tus aplicaciones sin problemas con una arquitectura optimizada para la velocidad, la confiabilidad y los requisitos comerciales en constante evolución.",
-    icon: <Maximize size={20} />,
+    title: "Ecosistema Digital",
+    description: "Sincronización perfecta entre tu sitio web y tus redes sociales, manteniendo una identidad visual coherente y una narrativa de marca unificada.",
+    icon: <Share2 size={20} />,
   },
   {
-    title: "Contexto Continuo",
-    description: "Mantén una continuidad fluida con contexto en tiempo real que persiste a través de sesiones, flujos de trabajo y entornos colaborativos.",
-    icon: <MessageSquare size={20} />,
+    title: "Optimización de Autoridad",
+    description: "Estructuras SEO y contenido estratégico que no solo mejoran tu visibilidad, sino que te posicionan como un referente experto en tu sector.",
+    icon: <Trophy size={20} />,
   },
 ];
 
