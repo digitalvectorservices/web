@@ -2,11 +2,13 @@
   "sectores": [
     {
       "sector": "Construcción & Diseño",
+      "slug": "construccion-diseno",
       "planes": [
         {
           "name": "Esencial",
           "description": "Landing Page con galería fija de alta calidad + definición de paleta de colores y tipografía web",
           "price": 20,
+          "mensual": false,
           "features": [
             "Landing Page",
             "Galería de alta calidad",
@@ -18,6 +20,7 @@
           "name": "Presencia",
           "description": "SPA con secciones + optimización estética de Instagram",
           "price": 20,
+          "mensual": false,
           "features": [
             "SPA",
             "Sección Sobre mí",
@@ -29,7 +32,8 @@
         {
           "name": "Autoridad",
           "description": "SEO local + contenido estratégico",
-          "price": 20,
+          "price": 60,
+          "mensual": true,
           "features": [
             "SEO local",
             "4 posts",
@@ -40,7 +44,8 @@
         {
           "name": "Gestión",
           "description": "Panel de cliente + contenido avanzado",
-          "price": 20,
+          "price": 60,
+          "mensual": true,
           "features": [
             "Panel de cliente",
             "Seguimiento de planos/avances",
@@ -53,11 +58,13 @@
     },
     {
       "sector": "Salud & Bienestar",
+      "slug": "salud-bienestar",
       "planes": [
         {
           "name": "Esencial",
           "description": "Landing con CV + contacto directo",
           "price": 20,
+          "mensual": false,
           "features": [
             "Landing Page",
             "CV profesional",
@@ -71,6 +78,7 @@
           "name": "Presencia",
           "description": "Web informativa + base de contenido",
           "price": 20,
+          "mensual": false,
           "features": [
             "Sección Tratamientos",
             "Blog de salud",
@@ -81,7 +89,8 @@
         {
           "name": "Crecimiento",
           "description": "SEO por intención + contenido educativo",
-          "price": 20,
+          "price": 60,
+          "mensual": true,
           "features": [
             "SEO por síntomas",
             "SEO por patologías",
@@ -92,7 +101,8 @@
         {
           "name": "Eficiencia",
           "description": "Automatización de turnos + contenido dinámico",
-          "price": 20,
+          "price": 60,
+          "mensual": true,
           "features": [
             "Sistema de turnos online",
             "Recordatorios",
@@ -105,11 +115,13 @@
     },
     {
       "sector": "Estética & Moda",
+      "slug": "estetica-moda",
       "planes": [
         {
           "name": "Esencial",
           "description": "Landing tipo Linktree + identidad visual trendy",
-          "price": 20,
+          "price": 60,
+          "mensual": false,
           "features": [
             "Landing tipo Linktree",
             "Listado de servicios",
@@ -121,7 +133,8 @@
         {
           "name": "Presencia",
           "description": "Web visual + contenido editorial",
-          "price": 20,
+          "price": 60,
+          "mensual": false,
           "features": [
             "Web interactiva",
             "Galería antes/después",
@@ -132,6 +145,7 @@
           "name": "Influencia",
           "description": "SEO + dirección estética constante",
           "price": 20,
+          "mensual": true,
           "features": [
             "SEO servicios específicos",
             "Guía de estilo",
@@ -142,6 +156,7 @@
           "name": "Venta",
           "description": "Monetización + contenido de tendencia",
           "price": 20,
+          "mensual": true,
           "features": [
             "Ecommerce",
             "Venta de productos",
@@ -155,11 +170,13 @@
     },
     {
       "sector": "Gastronomía",
+      "slug": "gastronomia",
       "planes": [
         {
           "name": "Esencial",
           "description": "Menú digital + enfoque visual",
           "price": 20,
+          "mensual": false,
           "features": [
             "Landing Page",
             "Menú digital",
@@ -170,6 +187,7 @@
           "name": "Presencia",
           "description": "Pedidos online + contenido base",
           "price": 20,
+          "mensual": false,
           "features": [
             "Formulario de pedidos",
             "Bio optimizada delivery",
@@ -180,6 +198,7 @@
           "name": "Flujo",
           "description": "SEO local + contenido impulsivo",
           "price": 20,
+          "mensual": true,
           "features": [
             "SEO local",
             "4 posts",
@@ -189,7 +208,8 @@
         {
           "name": "Automatización",
           "description": "Ecommerce + contenido detrás de escena",
-          "price": 20,
+          "price": 60,
+          "mensual": true,
           "features": [
             "Tienda online",
             "Carrito de compras",
@@ -203,11 +223,13 @@
     },
     {
       "sector": "Creativo",
+      "slug": "creativo",
       "planes": [
         {
           "name": "Esencial",
           "description": "Portfolio + identidad artística",
           "price": 20,
+          "mensual": false,
           "features": [
             "Portfolio landing",
             "Biografía artística",
@@ -218,6 +240,7 @@
           "name": "Presencia",
           "description": "Organización de obra + contenido visual",
           "price": 20,
+          "mensual": false,
           "features": [
             "Secciones por categorías",
             "4 posts carrusel",
@@ -228,6 +251,7 @@
           "name": "Alcance",
           "description": "SEO + estrategia de contenido",
           "price": 20,
+          "mensual": true,
           "features": [
             "SEO name artístico",
             "SEO estilo",
@@ -238,7 +262,8 @@
         {
           "name": "Monetización",
           "description": "Venta + contenido en proceso",
-          "price": 20,
+          "price": 60,
+          "mensual": true,
           "features": [
             "Venta de productos digitales",
             "Prints",
@@ -253,11 +278,13 @@
     },
     {
       "sector": "Holístico",
+      "slug": "holistico",
       "planes": [
         {
           "name": "Esencial",
           "description": "Landing + identidad espiritual",
           "price": 20,
+          "mensual": false,
           "features": [
             "Landing Page",
             "Descripción de servicios",
@@ -269,6 +296,7 @@
           "name": "Presencia",
           "description": "Validación social + contenido base",
           "price": 20,
+          "mensual": false,
           "features": [
             "Tipos de lectura",
             "Testimonios",
@@ -280,6 +308,7 @@
           "name": "Comunidad",
           "description": "SEO + contenido recurrente",
           "price": 20,
+          "mensual": true,
           "features": [
             "SEO espiritual",
             "4 posts",
@@ -290,7 +319,8 @@
         {
           "name": "Expansión",
           "description": "Monetización + contenido diario",
-          "price": 20,
+          "price": 60,
+          "mensual": true,
           "features": [
             "Reserva con pago",
             "8 posts",

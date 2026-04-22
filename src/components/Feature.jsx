@@ -20,14 +20,6 @@ export const Feature = ({feature, index}) => {
                   {feature.description}
                 </p>
               </div>
-
-              {/* Action Link */}
-              <a 
-                href="#" 
-                className="inline-flex items-center gap-2 text-primary text-sm font-semibold hover:gap-3 transition-all"
-              >
-                Get Started Now <ArrowRight size={16} />
-              </a>
         </div>
     )
 }

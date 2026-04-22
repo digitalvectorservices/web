@@ -39,8 +39,18 @@ export const PricingCard = ({ plan, sectionPlans }) => {
             </p>
           </div>
         </div>
+        
+        <div className="mb-8">
+          <div className="flex items-baseline gap-1">
+            <span className="text-4xl font-bold text-white">${plan.price}</span>
+            {plan.mensual && <span className="text-gray-500 text-sm">/mes</span>}
+          </div> 
+          {plan.mensual && (<><p className="text-gray-500 text-sm mt-1">Facturado mensualmente</p>
+          <p className="text-gray-500 text-xs">Cancelá cuando quieras</p></>)}
+          {!plan.mensual && <p className="text-gray-500 text-sm mt-1 mb-4">Pago único</p>}
+        </div>
 
-        <button className="w-full py-4 rounded-xl font-bold text-sm flex items-center justify-center gap-2 bg-primary text-black transition-all hover:brightness-110 active:scale-95 mb-8">
+        <button className="cursor-pointer w-full py-4 rounded-xl font-bold text-sm flex items-center justify-center gap-2 bg-primary text-black transition-all hover:brightness-110 active:scale-95 mb-8">
           Empezar ahora <ArrowRight size={16} strokeWidth={3} />
         </button>
 

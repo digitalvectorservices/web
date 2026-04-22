@@ -1,12 +1,28 @@
-import React, { useState } from 'react';
+import React, { useMemo } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { PricingCard } from './PricingCard';
 import data from '../data/plans.json';
 
 export const PricingSection = () => {
-  const [selectedSector, setSelectedSector] = useState(data.sectores[0].sector);
+  const [searchParams, setSearchParams] = useSearchParams();
 
   const sectores = data.sectores;
-  const currentSector = sectores.find(s => s.sector === selectedSector);
+
+  // 🔥 Obtener sector desde URL
+  const sectorFromUrl = searchParams.get('sector');
+
+  // 🔥 Validar sector (fallback al primero)
+  const selectedSector = useMemo(() => {
+    const found = sectores.find(s => s.slug === sectorFromUrl);
+    return found ? found.slug : sectores[0].slug;
+  }, [sectorFromUrl, sectores]);
+
+  const currentSector = sectores.find(s => s.slug === selectedSector);
+
+  // 🔥 Cambiar URL al seleccionar
+  const handleChange = (e) => {
+    setSearchParams({ sector: e.target.value });
+  };
 
   return (
     <section className="bg-black py-24 px-6 relative overflow-hidden">
@@ -26,11 +42,11 @@ export const PricingSection = () => {
         <div className="flex justify-center mb-12">
           <select
             value={selectedSector}
-            onChange={(e) => setSelectedSector(e.target.value)}
+            onChange={handleChange}
             className="bg-neutral-900 text-white border border-neutral-700 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-white"
           >
             {sectores.map((sector, index) => (
-              <option key={index} value={sector.sector}>
+              <option key={index} value={sector.slug}>
                 {sector.sector}
               </option>
             ))}
@@ -40,7 +56,11 @@ export const PricingSection = () => {
         {/* Plans */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {currentSector.planes.map((plan, index) => (
-            <PricingCard key={index} plan={plan} sectionPlans={currentSector.planes} />
+            <PricingCard
+              key={index}
+              plan={plan}
+              sectionPlans={currentSector.planes}
+            />
           ))}
         </div>
 
