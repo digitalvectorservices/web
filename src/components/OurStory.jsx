@@ -1,5 +1,5 @@
 import { CheckCircle2, ArrowRight } from 'lucide-react';
-import ourStories from "../assets/images/ourStory.jpeg";
+import ourStories from "../assets/images/ourStory.jpg";
 
 export const OurStory = () => (
   <section className="bg-black py-20 px-6">

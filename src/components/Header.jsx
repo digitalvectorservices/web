@@ -97,8 +97,8 @@ export const Header = () => {
               onClick={() => setOpen(false)} // closes menu on click
               className={({ isActive }) =>
                 isActive
-                  ? "bg-green-900/40 px-5 py-3 rounded-lg"
-                  : "px-5 py-3 hover:text-white"
+                  ? "bg-green-900/40 px-5 py-3 rounded-lg capitalize"
+                  : "px-5 py-3 hover:text-white capitalize"
               }
             >
               {item.label}

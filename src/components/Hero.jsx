@@ -1,10 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
-import hero1 from "../assets/images/hero1.jpeg";
-import hero2 from "../assets/images/ourStory.jpeg";
-import avatar1 from "../assets/images/avatar1.png";
-import avatar2 from "../assets/images/avatar2.png";
-import avatar3 from "../assets/images/avatar3.png";
+import hero1 from "../assets/images/hero1.jpg";
+import hero2 from "../assets/images/ourStory.jpg";
+import avatar1 from "../assets/images/avatar1.jpg";
+import avatar2 from "../assets/images/avatar2.jpg";
+import avatar3 from "../assets/images/avatar3.jpg";
 
 const slides = [
   {
