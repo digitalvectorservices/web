@@ -46,11 +46,13 @@ export const Footer = () => {
           </div>
 
           {/* Columna 3: Ubicación (Centro en mobile, derecha en desktop) */}
-          <div className="flex items-center justify-center lg:justify-end gap-2 text-sm text-gray-300 order-3">
-            <MapPin size={16} className="text-primary shrink-0" />
-            <span className="text-center lg:text-right">
-              Ciudad Autónoma de Buenos Aires, 1428, Argentina
-            </span>
+          <div className="w-full text-center lg:text-right order-3">
+            <div className="inline-flex items-center gap-2 text-sm text-gray-300">
+              <MapPin size={16} className="text-primary shrink-0" />
+              <span>
+                Ciudad Autónoma de Buenos Aires, 1428, Argentina
+              </span>
+            </div>
           </div>
         </div>
 
