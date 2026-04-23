@@ -44,7 +44,7 @@
         {
           "name": "Gestión",
           "description": "Panel de cliente + contenido avanzado",
-          "price": 85000,
+          "price": 160000,
           "mensual": true,
           "features": [
             "Panel de cliente",
@@ -144,7 +144,7 @@
         {
           "name": "Influencia",
           "description": "SEO + dirección estética constante",
-          "price": 120000,
+          "price": 85000,
           "mensual": true,
           "features": [
             "SEO servicios específicos",
@@ -155,7 +155,7 @@
         {
           "name": "Venta",
           "description": "Monetización + contenido de tendencia",
-          "price": 85000,
+          "price": 160000,
           "mensual": true,
           "features": [
             "Ecommerce",
@@ -239,7 +239,7 @@
         {
           "name": "Presencia",
           "description": "Organización de obra + contenido visual",
-          "price": 2500000,
+          "price": 250000,
           "mensual": false,
           "features": [
             "Secciones por categorías",
@@ -307,7 +307,7 @@
         {
           "name": "Comunidad",
           "description": "SEO + contenido recurrente",
-          "price": 850000,
+          "price": 85000,
           "mensual": true,
           "features": [
             "SEO espiritual",
