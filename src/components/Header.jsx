@@ -50,7 +50,7 @@ export const Header = () => {
               to={item.path}
               className={({ isActive }) =>
                 isActive
-                  ? "bg-green-900/40 px-5 py-2 rounded-lg text-white"
+                  ? "bg-gray-500/40 px-5 py-2 rounded-lg text-white"
                   : "hover:text-white py-2 px-5"
               }
             >
@@ -97,7 +97,7 @@ export const Header = () => {
               onClick={() => setOpen(false)} // closes menu on click
               className={({ isActive }) =>
                 isActive
-                  ? "bg-green-900/40 px-5 py-3 rounded-lg capitalize"
+                  ? "bg-gray-500/40 px-5 py-3 rounded-lg capitalize"
                   : "px-5 py-3 hover:text-white capitalize"
               }
             >

@@ -11,7 +11,7 @@ export const Upbutton = () => {
     <button
       onClick={handleScrollToTop}
       // Asegúrate de que 'bg-primary' exista en tu tailwind.config o cámbialo a 'bg-blue-500'
-      className="cursor-pointer fixed bottom-6 left-6 bg-primary p-3 rounded-lg text-black hover:brightness-110 transition-all shadow-2xl active:scale-95 z-"
+      className="cursor-pointer fixed bottom-6 left-6 bg-primary p-3 rounded-lg text-black hover:brightness-110 transition-all shadow-2xl active:scale-95 hidden md:block"
       aria-label="Subir al inicio"
     >
       <ArrowUp size={20} strokeWidth={3} />
