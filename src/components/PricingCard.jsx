@@ -2,23 +2,13 @@ import { CheckCircle2, XCircle, ArrowRight } from 'lucide-react';
 import { goToWhatsapp } from '../utils/whatsapp';
 
 export const PricingCard = ({ plan, sectionPlans, sector }) => {
-  // 🔥 Encontrar índice REAL del plan
-  const currentIndex = sectionPlans.findIndex(
-    (p) => p.name === plan.name
-  );
-
+  const currentIndex = sectionPlans.findIndex((p) => p.name === plan.name);
   const delay = `${currentIndex * 1.5}s`;
 
-  // 🔥 Todas las features (sin duplicados)
-  const allFeatures = [
-    ...new Set(sectionPlans.flatMap((p) => p.features))
-  ];
+  const allFeatures = [...new Set(sectionPlans.flatMap((p) => p.features))];
 
-  // 🔥 Features incluidas (acumuladas)
   const includedFeatures = new Set(
-    sectionPlans
-      .slice(0, currentIndex + 1)
-      .flatMap((p) => p.features)
+    sectionPlans.slice(0, currentIndex + 1).flatMap((p) => p.features)
   );
 
   return (
@@ -32,51 +22,59 @@ export const PricingCard = ({ plan, sectionPlans, sector }) => {
       />
 
       <div className="relative bg-[#0b0d0b] rounded-[30px] p-8 flex flex-col h-full z-10">
-        <div className="flex justify-between items-start mb-6">
-          <div className="min-h-[60px]">
+        
+        {/* GRUPO SUPERIOR: Título, Descripción y Precio */}
+        {/* Usamos un min-h general más pequeño para asegurar alineación del botón sin exceso de espacio */}
+        <div className="flex flex-col min-h-[220px]"> 
+          <div className="mb-4">
             <h3 className="text-white text-xl font-bold">{plan.name}</h3>
             <p className="text-gray-400 text-[11px] mt-2 leading-relaxed">
               {plan.description}
             </p>
           </div>
-        </div>
-        
-        <div className="mb-8">
-          <div className="flex items-baseline gap-1">
-            <span className="text-4xl font-bold text-white">${plan.price}</span>
-            {plan.mensual && <span className="text-gray-500 text-sm">/mes</span>}
-          </div> 
-          {plan.mensual && (<><p className="text-gray-500 text-sm mt-1">Facturado mensualmente</p>
-          <p className="text-gray-500 text-xs">Cancelá cuando quieras</p></>)}
-          {!plan.mensual && <p className="text-gray-500 text-sm mt-1 mb-4">Pago único</p>}
+          
+          <div className="mt-auto mb-6">
+            <div className="flex items-baseline gap-1">
+              <span className="text-4xl font-bold text-white">${plan.price}</span>
+              {plan.mensual && <span className="text-gray-500 text-sm">/mes</span>}
+            </div> 
+            <div className="h-8"> {/* Altura fija pequeña para los textos de facturación */}
+              {plan.mensual ? (
+                <p className="text-gray-500 text-[10px] mt-1 leading-tight">
+                  Facturado mensualmente. Cancelá cuando quieras.
+                </p>
+              ) : (
+                <p className="text-gray-500 text-[10px] mt-1">Pago único</p>
+              )}
+            </div>
+          </div>
         </div>
 
-        <button className="cursor-pointer w-full py-4 rounded-xl font-bold text-sm flex items-center justify-center gap-2 bg-primary text-black transition-all hover:brightness-110 active:scale-95 mb-8"
-          onClick={() => goToWhatsapp(sector, plan.name)}>
+        {/* BOTÓN: Siempre quedará a la misma altura por el min-h del grupo superior */}
+        <button 
+          className="cursor-pointer w-full py-4 rounded-xl font-bold text-sm flex items-center justify-center gap-2 bg-primary text-black transition-all hover:brightness-110 active:scale-95 mb-8"
+          onClick={() => goToWhatsapp(sector, plan.name)}
+        >
           Saber más <ArrowRight size={16} strokeWidth={3} />
         </button>
 
-        {/* FEATURES */}
-        <ul className="space-y-4 flex-grow">
+        {/* FEATURES: El espacio sobrante se va para acá */}
+        <ul className="space-y-3">
           {allFeatures.map((feature, idx) => {
             const isIncluded = includedFeatures.has(feature);
-
             return (
               <li
                 key={idx}
                 className={`flex items-center gap-3 text-[12px] ${
-                  isIncluded
-                    ? 'text-white'
-                    : 'text-white opacity-60'
+                  isIncluded ? 'text-white' : 'text-white opacity-30'
                 }`}
               >
                 {isIncluded ? (
-                  <CheckCircle2 size={16} className="text-primary shrink-0" />
+                  <CheckCircle2 size={14} className="text-primary shrink-0" />
                 ) : (
-                  <XCircle size={16} className="text-gray-600 shrink-0" />
+                  <XCircle size={14} className="text-gray-600 shrink-0" />
                 )}
-
-                <span>{feature}</span>
+                <span className="leading-tight">{feature}</span>
               </li>
             );
           })}
