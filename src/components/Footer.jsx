@@ -34,15 +34,17 @@ export const Footer = () => {
           </nav>
 
           {/* Columna 2: Enlaces Legales (Siempre al centro) */}
-          <div className="flex justify-center gap-8 order-2">
+          <div className="flex-col lg:flex lg:flex-row justify-center gap-8 order-2">
             {legalItems.map((link) => (
-              <a
-                key={link.label}
-                href={link.path}
-                className="text-sm font-medium text-white hover:text-primary transition-colors whitespace-nowrap"
-              >
-                {link.label}
-              </a>
+              <div className="flex justify-center mb-3">
+                <a
+                  key={link.label}
+                  href={link.path}
+                  className="text-sm font-medium text-white hover:text-primary transition-colors whitespace-nowrap"
+                >
+                  {link.label}
+                </a>
+              </div>
             ))}
           </div>
 
