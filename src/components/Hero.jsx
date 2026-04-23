@@ -60,7 +60,7 @@ export const Hero = () => {
           </h1>
 
           {/* Descripción */}
-          <p className="mt-6 text-gray-300 text-base sm:text-lg">
+          <p className="mt-6 lg:flex text-gray-300 text-base sm:text-lg hidden">
             {slide.description}
           </p>
 
@@ -73,14 +73,14 @@ export const Hero = () => {
             </button>
 
             {/* Secundario */}
-            <button className="cursor-pointer px-5 py-2.5 sm:px-7 sm:py-3 rounded-xl font-medium text-white border border-white/30 hover:bg-white/10 transition">
+            {/* <button className="cursor-pointer px-5 py-2.5 sm:px-7 sm:py-3 rounded-xl font-medium text-white border border-white/30 hover:bg-white/10 transition">
               Saber más →
-            </button>
+            </button> */}
 
           </div>
 
           {/* Valoración / Social Proof */}
-          <div className="mt-8 flex items-center gap-4 justify-center md:justify-start">
+          <div className="mt-8 lg:flex items-center gap-4 justify-center md:justify-start hidden ">
             <div className="flex -space-x-3">
               <img src={avatar1} className="w-8 h-8 rounded-full border border-black" alt="Avatar 1" />
               <img src={avatar2} className="w-8 h-8 rounded-full border border-black" alt="Avatar 2" />
