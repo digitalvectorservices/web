@@ -14,19 +14,18 @@ export const Footer = () => {
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/4 pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        
+
         {/* Contenedor Principal: 3 Columnas en Mobile (apiladas), 1 Fila en Desktop */}
         <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-10 mb-12">
-          
+
           {/* Columna 1: Navegación Principal */}
-          <nav className="flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-2 order-1">
+          <nav className="flex flex-col md:flex-row items-center md:items-start flex-wrap justify-center lg:justify-start gap-x-6 gap-y-4 order-1">
             {navItems.map((item) => (
               <a
                 key={item.label}
                 href={item.path}
-                className={`text-sm font-medium capitalize transition-colors hover:text-primary ${
-                  item.label === 'home' ? 'text-primary' : 'text-white'
-                }`}
+                className={`text-sm font-medium capitalize transition-colors hover:text-primary ${item.label === 'home' ? 'text-primary' : 'text-white'
+                  }`}
               >
                 {item.label}
               </a>
@@ -34,17 +33,15 @@ export const Footer = () => {
           </nav>
 
           {/* Columna 2: Enlaces Legales (Siempre al centro) */}
-          <div className="flex-col lg:flex lg:flex-row justify-center gap-8 order-2">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-y-3 md:gap-x-8 order-2">
             {legalItems.map((link) => (
-              <div className="flex justify-center mb-3">
-                <a
-                  key={link.label}
-                  href={link.path}
-                  className="text-sm font-medium text-white hover:text-primary transition-colors whitespace-nowrap"
-                >
-                  {link.label}
-                </a>
-              </div>
+              <a
+                key={link.label}
+                href={link.path}
+                className="text-sm font-medium text-white hover:text-primary transition-colors whitespace-nowrap"
+              >
+                {link.label}
+              </a>
             ))}
           </div>
 
