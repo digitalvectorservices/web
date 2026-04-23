@@ -58,7 +58,11 @@ export const PricingSection = () => {
           {currentSector.planes.map((plan, index) => (
             <PricingCard
               key={index}
-              plan={plan}
+              // Pasamos el plan original pero formateamos el precio al vuelo
+              plan={{
+                ...plan,
+                price: plan.price.toLocaleString('es-AR')
+              }}
               sectionPlans={currentSector.planes}
               sector={currentSector.sector}
             />
