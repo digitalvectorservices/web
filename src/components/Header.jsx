@@ -20,7 +20,7 @@ export const Header = () => {
     "Hola Digital Vector,\n\nQuisiera recibir más información sobre sus servicios.\n\nGracias."
   );
 
-  const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=digitalvectorservices@gmail.com&su=${subject}&body=${body}`;
+  const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=contacto@digitalvector.com.ar&su=${subject}&body=${body}`;
 
     const socialLinks = [
     {
