@@ -32,9 +32,14 @@ export const ContactSection = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">Contactanos</h2>
-          <p className="text-gray-400 max-w-3xl text-base leading-relaxed">
-            Fundada en la Ciudad Autónoma de Buenos Aires, Digital Vector Services comenzó como un equipo apasionado por la tecnología...
-          </p>
+          <div className="lg:flex gap-9">
+            <p className="d-flex  text-gray-400 max-w-2xl text-base leading-relaxed">
+              Digital Vector Services nació en la Ciudad Autónoma de Buenos Aires, no de una gran corporación, sino de un grupo de profesionales apasionados por la tecnología que, tras años trabajando en el sector, nos dimos cuenta de algo crucial: muchos negocios locales necesitaban confiabilidad y soluciones reales.
+            </p>
+            <p className="text-gray-400 max-w-2xl text-base leading-relaxed lg:block hidden">
+              Entendemos tu mercado porque es el nuestro. Nos propusimos simplificar lo digital para vos, diseñando tu identidad y construyendo tu web para que tu única preocupación sea atender a tus nuevos clientes. Somos el equipo que está ahí.
+            </p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
