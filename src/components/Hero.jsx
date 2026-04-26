@@ -2,12 +2,13 @@
 import { useState, useEffect } from "react";
 // Importa las versiones mobile
 import hero1 from "../assets/images/hero1.webp";
-import hero1m from "../assets/images/hero1m.webp"; 
+import hero1m from "../assets/images/hero1m.webp";
 import hero2 from "../assets/images/ourStory.webp";
-import hero2m from "../assets/images/ourStory.webp"; 
+import hero2m from "../assets/images/ourStory.webp";
 import avatar1 from "../assets/images/Avatar1.webp";
 import avatar2 from "../assets/images/Avatar2.webp";
 import avatar3 from "../assets/images/Avatar3.webp";
+import { Link } from 'react-router-dom';
 
 const slides = [
   {
@@ -35,7 +36,7 @@ export const Hero = () => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    
+
     checkMobile(); // Ejecución inicial
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
@@ -54,7 +55,7 @@ export const Hero = () => {
     setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
 
   const slide = slides[current];
-  
+
   // Seleccionamos la imagen basada en el estado isMobile
   const activeImage = isMobile ? slide.mobileImage : slide.desktopImage;
 
@@ -86,9 +87,12 @@ export const Hero = () => {
 
           {/* Llamadas a la acción */}
           <div className="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
-            <button className="cursor-pointer bg-[var(--color-primary)] text-white px-5 py-2.5 sm:px-7 sm:py-3 rounded-xl font-medium hover:brightness-110 transition">
+            <Link
+              to="/services"
+              className="cursor-pointer bg-[var(--color-primary)] text-white px-5 py-2.5 sm:px-7 sm:py-3 rounded-xl font-medium hover:brightness-110 transition inline-block"
+            >
               Empezar ahora →
-            </button>
+            </Link>
           </div>
 
           {/* Social Proof */}
