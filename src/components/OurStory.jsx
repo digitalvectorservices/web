@@ -2,7 +2,7 @@ import { CheckCircle2, ArrowRight } from 'lucide-react';
 import ourStories from "../assets/images/ourStory.webp";
 
 export const OurStory = () => (
-  <section className="bg-black py-20 px-6">
+  <section className="bg-black py-10 lg:py-20 px-6">
     <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
       <h2 className="lg:hidden text-4xl font-bold text-white mb-6">Nosotros</h2>
       <div className="rounded-[40px] overflow-hidden h-[500px]">

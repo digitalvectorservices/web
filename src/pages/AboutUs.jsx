@@ -24,13 +24,13 @@ const FSection = [
 
 export const AboutUs = () => {
   return (
-    <section className="bg-black text-white py-24 px-6">
+    <section className="bg-black text-white lg:py-12 px-6">
       <div className="max-w-7xl mx-auto font-sans">
         
         <OurStory />
         
         {/* Espaciado ajustado para dar aire entre componentes */}
-        <div className="mt-32 flex flex-col justify-start gap-12">
+        <div className="lg:mt-32 flex flex-col justify-start gap-12">
           <div className="max-w-3xl">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight leading-tight">
               Impulsamos el futuro de <br /> <span className="text-primary">Digital Vector Services</span>
