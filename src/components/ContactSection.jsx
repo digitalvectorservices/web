@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'; // Agregamos useRef y useState
 import emailjs from '@emailjs/browser';
-import Us from "../assets/images/Us.jpg";
+import Us from "../assets/images/Us.webp";
 
 export const ContactSection = () => {
   const form = useRef();

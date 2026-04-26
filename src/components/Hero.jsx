@@ -1,13 +1,13 @@
 "use client";
 import { useState, useEffect } from "react";
 // Importa las versiones mobile
-import hero1 from "../assets/images/hero1.jpg";
-import hero1m from "../assets/images/hero1m.jpg"; 
-import hero2 from "../assets/images/ourStory.jpg";
-import hero2m from "../assets/images/ourStory.jpg"; // Asumiendo que existe o usa hero2 si es la misma
-import avatar1 from "../assets/images/avatar1.jpg";
-import avatar2 from "../assets/images/avatar2.jpg";
-import avatar3 from "../assets/images/avatar3.jpg";
+import hero1 from "../assets/images/hero1.webp";
+import hero1m from "../assets/images/hero1m.webp"; 
+import hero2 from "../assets/images/ourStory.webp";
+import hero2m from "../assets/images/ourStory.webp"; 
+import avatar1 from "../assets/images/Avatar1.webp";
+import avatar2 from "../assets/images/Avatar2.webp";
+import avatar3 from "../assets/images/Avatar3.webp";
 
 const slides = [
   {

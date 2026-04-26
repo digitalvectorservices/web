@@ -1,6 +1,6 @@
 import React from 'react';
 import { Smartphone, Laptop, CreditCard, ArrowRight, Layout, TrendingUp, ShoppingCart } from 'lucide-react';
-import Feature from "../assets/images/feature.jpg";
+import Feature from "../assets/images/Feature.webp";
 import { AnimatedCard, SmallFeature } from './SmallFeature';
 
 export const FeaturesSection = () => {

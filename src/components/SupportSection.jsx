@@ -1,6 +1,6 @@
 import React from 'react';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
-import Support from "../assets/images/support.jpg";
+import Support from "../assets/images/support.webp";
 import { useNavigate } from 'react-router-dom';
 
 export const SupportSection = () => {
