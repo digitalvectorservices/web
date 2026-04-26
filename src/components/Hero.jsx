@@ -64,7 +64,7 @@ export const Hero = () => {
 
       {/* Fondo con transición suave al cambiar de imagen */}
       <div
-        className="absolute inset-0 bg-cover bg-center transition-all duration-700 scale-105"
+        className="absolute inset-0 bg-cover bg-center transition-opacity duration-700"
         style={{ backgroundImage: `url(${activeImage.src || activeImage})` }}
       />
 

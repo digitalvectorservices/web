@@ -54,7 +54,7 @@ export const SupportSection = () => {
                 <button className="cursor-pointer bg-primary hover:brightness-110 text-black font-bold py-4 px-8 rounded-full flex items-center gap-2 transition-all active:scale-95 shadow-[0_10px_20px_-10px_rgba(theme(colors.primary),0.5)]"
                 onClick={() => {
                   navigate('/services'); 
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                  window.scrollTo({ top: 0 });
                 }}
                 >
                   Ver planes incluidos <ArrowRight size={18} strokeWidth={3} />

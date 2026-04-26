@@ -4,9 +4,13 @@ import { navItems } from '../utils/lib';
 import { PrivacyPolicy } from "../pages/PrivacyPolicy";
 import { TermsAndConditions } from "../pages/TermsAndConditions";
 import { legalItems } from '../utils/legalitems';
+import { NavLink } from "react-router-dom";
 
 export const Footer = () => {
   const legalLinks = ['Privacy Policy', 'Terms & Conditions'];
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0 });
+  };
 
   return (
     <footer className="bg-black text-white pt-16 pb-10 px-6 relative overflow-hidden">
@@ -21,27 +25,32 @@ export const Footer = () => {
           {/* Columna 1: Navegación Principal */}
           <nav className="flex flex-col md:flex-row items-center md:items-start flex-wrap justify-center lg:justify-start gap-x-6 gap-y-4 order-1">
             {navItems.map((item) => (
-              <a
+              <NavLink
                 key={item.label}
-                href={item.path}
-                className={`text-sm font-medium capitalize transition-colors hover:text-primary ${item.label === 'home' ? 'text-primary' : 'text-white'
-                  }`}
+                to={item.path}
+                onClick={handleScrollToTop}
+                className={({ isActive }) =>
+                  `text-sm font-medium capitalize transition-colors hover:text-primary ${
+                    isActive ? "text-primary" : "text-white"
+                  }`
+                }
               >
                 {item.label}
-              </a>
+              </NavLink>
             ))}
           </nav>
 
           {/* Columna 2: Enlaces Legales (Siempre al centro) */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-y-3 md:gap-x-8 order-2">
             {legalItems.map((link) => (
-              <a
+              <NavLink
                 key={link.label}
-                href={link.path}
+                to={link.path}
                 className="text-sm font-medium text-white hover:text-primary transition-colors whitespace-nowrap"
+                onClick={handleScrollToTop}
               >
                 {link.label}
-              </a>
+              </NavLink>
             ))}
           </div>
 

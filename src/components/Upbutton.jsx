@@ -4,7 +4,7 @@ import { ArrowUp } from 'lucide-react';
 export const Upbutton = () => {
   // Esta es la función que se ejecuta al hacer clic
   const handleScrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0 });
   };
 
   return (
